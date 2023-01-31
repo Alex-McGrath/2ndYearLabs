@@ -1,0 +1,27 @@
+Problem Statement
+
+The goal is to sort numbers by their Collatz length.
+
+ 
+
+It is conjectured that any number can be reduced to 1 by following these steps:
+
+ 
+
+1) If the number is even divide it in 2
+
+2) If the number is odd, multiply by 3 and add 1
+
+ 
+
+See here for more details on the Collatz sequence: https://en.wikipedia.org/wiki/Collatz_conjecture
+
+ 
+
+Let's call "Collatz length" the number of steps needed to reduce a number to 1. The Collatz length of 1 is zero, since no steps are needed. Whereas the Collatz length of 4 is two, since two steps are needed: 4 -> 2-> 1. 
+
+Every number will have a Collatz length. The goal is to sort a set of numbers in a given range by their Collatz length, and then output the xth number in the sorted list. If two numbers have the same Collatz length, then the smaller number should come first.
+
+ 
+
+Note: These numbers can get very long and exceed the limit of a Java int (2,147,483,647). It's a good idea then to use longs rather than ints. 
